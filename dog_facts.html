@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quotes Generator</title>
+</head>
+<body style="background-color:#f9fbf2;">
+    <h1>Motivational Quotes</h1>
+    <div id="container"><button onclick="displayNewJoke()">Click me!</button></div>
+    <p id="quote"></p>
+</body>
+<style>
+    h1 {
+        text-align:center;
+        margin-top: 5%;
+        font-family:'Arial';
+        color: #3f403f;
+    }
+    button {
+        background-color: #ff3366;
+        text-align: center;
+        font-size: 64px;
+        margin-top: 5%;
+        border-radius: 16px;
+        padding: 10px 40px 10px 40px;
+        transition: opacity .25s;
+    }
+
+    button:hover {
+        opacity: .75;
+        cursor: pointer;
+    }
+
+    p {
+        text-align: center;
+        font-size: 24px;
+        font-family: "Arial";
+        margin-top: 50px;
+    }
+
+    #container
+    {
+        text-align:center;
+    }
+</style>
+<script>
+
+function displayNewJoke(){
+    fetch('https://quote-garden.herokuapp.com/api/v3/quotes?',  {
+        mode: 'cors',
+        headers: {'Access-Control-Allow-Origin':'*'}
+})
+    .then(res=>res.json())
+    .then(data=>document.querySelector("#quote").innerHTML = data.data[Math.floor(Math.random() * 11)].quoteText)
+}
+</script>
+</html>
