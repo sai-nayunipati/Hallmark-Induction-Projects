@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping List</title>
+</head>
+<body>
+
+<h1>My Shopping List</h1>
+
+<button type="button" onclick="createList()">Create New List</button>
+
+<div id="shopping-list"></div>
+
+</body>
+
+<script>
+    
+    function createList() {
+        let shoppingList = []
+        for (i = 1; i <= 5; i++) {
+            let newItem = prompt(`(${String(i)}/5): What would you like to add to your shopping list?`);
+            shoppingList.push(newItem);
+        }
+
+        let html = "";
+        for (i in shoppingList) {
+            let itemNum = parseInt(i)
+            html += `<p>${itemNum + 1}: ${shoppingList[i]}</p>`;
+        }
+
+        document.querySelector('#shopping-list').innerHTML = html;
+    }
+
+</script>
+
+</html>
