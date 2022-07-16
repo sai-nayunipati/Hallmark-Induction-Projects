@@ -1,6 +1,6 @@
 """The backend of the LISTR application."""
 
-from flask import Flask, jsonify, request
+from flask import Flask, jsonify, request, render_template
 from flask_cors import CORS
 import mysql.connector
 
@@ -120,6 +120,26 @@ def move_task_down(id):
     db.commit()
 
     return jsonify("Task moved down.")
+
+
+@app.route("/about")
+def about_page():
+    """About page."""
+    return render_template("about.html")
+
+
+@app.route("/contact")
+def contact_page():
+    """Contact page."""
+    return render_template("contact.html")
+
+
+@app.route("/")
+def home():
+    sql = "SELECT * FROM listr_tasks"
+    cursor.execute(sql)
+    res = cursor.fetchall()
+    return render_template('home.html', todos=res)
 
 
 # Make sure we can only run the module explicitly.
