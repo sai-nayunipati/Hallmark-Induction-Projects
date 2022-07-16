@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+
+{% block title %}PickUp: My Cart{% endblock %}
+
+{% block cart_nav_class %}active{% endblock %}
+
+{% block content %}
+<br>
+<br>
+<ul>
+    {% for item in cart_items %}
+    <li>{{item[1]}} &#8729; ${{item[2]}}</li>
+    {% endfor %}
+</ul>
+
+<a class="btn btn-danger" onclick="clearCart()">Clear cart</a>
+<a class="btn btn-primary" onclick="clearCart()">Order</a>
+
+<script>
+    function clearCart() {
+        fetch('http://127.0.0.1:5000/clear')
+        .then(response => response.json())
+        .then(data => {
+            if(data.success) {
+                window.location.reload();
+            }
+        });
+    }
+</script>
+
+{% endblock %}
