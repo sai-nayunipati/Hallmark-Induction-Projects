@@ -20,6 +20,15 @@ def browse_page():
     sql = "SELECT * FROM items"
     cursor.execute(sql)
     res = cursor.fetchall()
+
+    # Substitute the seller_id with the seller's username
+    for i, item in enumerate(res):
+        sql = "SELECT username FROM users WHERE user_id = %s"
+        val = (item[3],)
+        cursor.execute(sql, val)
+        username = cursor.fetchone()
+        res[i] = (item[0], item[1], item[2], username[0], item[4], item[5])
+
     return render_template('browse.html', items=res)
 
 
