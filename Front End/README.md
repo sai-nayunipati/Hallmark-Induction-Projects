@@ -1,2 +1,0 @@
-# Hallmark Induction Projects
- 
