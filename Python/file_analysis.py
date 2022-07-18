@@ -31,4 +31,4 @@ with open(search_for, 'r') as file_object:
     print(word_dict)
 
     num_lines = content.count("\n") + 1
-    print("Line Count: " + num_lines)
+    print("Line Count: " + str(num_lines))
