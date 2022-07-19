@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block title %}Players List{% endblock %}
+
+{% block enable_home %}active{% endblock %} 
+
+{% block content %}
+
+<ol>
+    {% for player in players %}
+    <li>{{player["name"]}} ({{player["classical_rating"]}})</li>
+    {% endfor %}
+</ol>
+
+{% endblock %}

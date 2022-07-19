@@ -29,11 +29,11 @@ class ChessSpider(scrapy.Spider):
         # pylint: disable=line-too-long
         for player_tr in response.xpath("//div[@class='master-players-rating-rank']/../.."):
             yield {
-                'rank': player_tr.xpath("td/div[@class='master-players-rating-rank']/text()").extract()[0].strip()[1:],
+                'rank': int(player_tr.xpath("td/div[@class='master-players-rating-rank']/text()").extract()[0].strip()[1:]),
                 'name': player_tr.xpath("td/div[@class='master-players-rating-user-wrapper']/a[@class='username']/text()").extract()[0].strip(),
-                'classical_rating': player_tr.xpath("td/div[@class='master-players-rating-player-rank master-players-rating-rank-active']/text()").extract()[0].strip(),
-                'rapid_rating': player_tr.xpath("td/div[@class='master-players-rating-player-rank ']/text()").getall()[0].strip(),
-                'blitz_rating': player_tr.xpath("td/div[@class='master-players-rating-player-rank ']/text()").getall()[1].strip(),
+                'classical_rating': int(player_tr.xpath("td/div[@class='master-players-rating-player-rank master-players-rating-rank-active']/text()").extract()[0].strip()),
+                'rapid_rating': int(player_tr.xpath("td/div[@class='master-players-rating-player-rank ']/text()").getall()[0].strip()),
+                'blitz_rating': int(player_tr.xpath("td/div[@class='master-players-rating-player-rank ']/text()").getall()[1].strip()),
             }
 
         for i in range(2, 51):
@@ -52,6 +52,9 @@ process.start()
 client = pymongo.MongoClient('localhost', 27017)
 db = client['chess_players']
 my_collection = db['top_chess_players']
+
+# my_collection.delete_many({})  # Clear the collection if necessary
+
 
 with open('top_chess_players.json', 'r', encoding='utf-8') as f:
     data = json.load(f)
