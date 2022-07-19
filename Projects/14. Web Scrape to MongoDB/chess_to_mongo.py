@@ -15,10 +15,6 @@ import json
 class ChessSpider(scrapy.Spider):
     """A spider which grabs the data of the top chess.com in descending order of rank."""
     name = 'chess_spider'
-    # start_urls = ['https://www.chess.com/ratings?page=1']
-
-    # n = 50
-    # current_depth = 1
 
     def start_requests(self):
         yield scrapy.Request('https://www.chess.com/ratings?page=1')
