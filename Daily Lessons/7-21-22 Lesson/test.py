@@ -18,6 +18,6 @@ try:
 except IndexError as ie:
     logger.setLevel(logging.ERROR)
     logger.exception(ie)
-except ZeroDivisionError as e:
+except SyntaxError as e:
     logger.setLevel(logging.ERROR)
     logger.exception(e)
