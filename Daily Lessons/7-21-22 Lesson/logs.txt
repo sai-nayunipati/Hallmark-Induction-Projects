@@ -1,0 +1,30 @@
+2022-07-21 09:18:00,233 : test.py : <module> : INFO : 8 : Something to log
+2022-07-21 09:18:00,233 : test.py : <module> : DEBUG : 11 : Debugging an issue
+2022-07-21 09:19:43,004 : test.py : <module> : INFO : 8 : Something to log
+2022-07-21 09:19:43,004 : test.py : <module> : DEBUG : 11 : Debugging an issue
+2022-07-21 09:19:43,004 : test.py : <module> : ERROR : 17 : division by zero
+Traceback (most recent call last):
+  File "c:\Users\visa4\OneDrive\Desktop\Hallmark-Induction-Projects\Daily Lessons\7-21-22 Lesson\test.py", line 14, in <module>
+    a = 1 / 0
+ZeroDivisionError: division by zero
+2022-07-21 09:20:36,039 : test.py : <module> : INFO : 8 : Something to log
+2022-07-21 09:20:36,039 : test.py : <module> : DEBUG : 11 : Debugging an issue
+2022-07-21 09:20:36,044 : test.py : <module> : ERROR : 18 : division by zero
+Traceback (most recent call last):
+  File "c:\Users\visa4\OneDrive\Desktop\Hallmark-Induction-Projects\Daily Lessons\7-21-22 Lesson\test.py", line 15, in <module>
+    a = x/y
+ZeroDivisionError: division by zero
+2022-07-21 09:22:00,274 : test.py : <module> : INFO : 8 : Something to log
+2022-07-21 09:22:00,274 : test.py : <module> : DEBUG : 11 : Debugging an issue
+2022-07-21 09:22:00,274 : test.py : <module> : ERROR : 23 : division by zero
+Traceback (most recent call last):
+  File "c:\Users\visa4\OneDrive\Desktop\Hallmark-Induction-Projects\Daily Lessons\7-21-22 Lesson\test.py", line 15, in <module>
+    a = x/y
+ZeroDivisionError: division by zero
+2022-07-21 09:22:19,462 : test.py : <module> : INFO : 8 : Something to log
+2022-07-21 09:22:19,462 : test.py : <module> : DEBUG : 11 : Debugging an issue
+2022-07-21 09:22:19,462 : test.py : <module> : ERROR : 20 : list index out of range
+Traceback (most recent call last):
+  File "c:\Users\visa4\OneDrive\Desktop\Hallmark-Induction-Projects\Daily Lessons\7-21-22 Lesson\test.py", line 17, in <module>
+    print(l[4])
+IndexError: list index out of range
