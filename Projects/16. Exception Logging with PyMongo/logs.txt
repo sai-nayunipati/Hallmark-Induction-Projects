@@ -1,0 +1,9 @@
+2022-07-21 15:32:04,772 : Some unknown error occurred.
+2022-07-21 15:32:04,772 : invalid syntax (<string>, line 1)
+Traceback (most recent call last):
+  File "c:\Users\visa4\OneDrive\Desktop\Hallmark-Induction-Projects\Projects\16. Exception Logging with PyMongo\exception_mongo.py", line 18, in <module>
+    eval("mycollection." + method + "(" + args + ")")  # pylint: disable=eval-used
+  File "<string>", line 1
+    mycollection.()
+                 ^
+SyntaxError: invalid syntax
