@@ -53,7 +53,7 @@ client = pymongo.MongoClient('localhost', 27017)
 db = client['chess_players']
 my_collection = db['top_chess_players']
 
-# my_collection.delete_many({})  # Clear the collection if necessary
+my_collection.delete_many({})  # Clear the collection if necessary
 
 
 with open('top_chess_players.json', 'r', encoding='utf-8') as f:
