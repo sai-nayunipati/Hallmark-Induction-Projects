@@ -11,16 +11,12 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   <!--jQuery minifed-->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <!--Stylesheet-->
+  <link rel="stylesheet" href="zephyr.css" type="text/css">
 </head>
 <div id="navbar"></div>
-<body style="margin-top:55px">
-  <!--Using a carousel wrapper to make sure image dimensions same as home page-->
-  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="https://picsum.photos/300/100?a" class="d-block w-100" alt="...">
-      </div>
-  </div>
+<body style="margin-top:67px">
+  <img src="http://talluritechnologies.com/wp-content/themes/talluritechnologies/images/inner-bg.jpg" alt="" style="height: 30vh; width:100%; object-fit: cover">
 
   <div class="container-fluid px-0">
     <!--Opening panel-->
@@ -30,15 +26,15 @@
             <br>
             <h1 class="text-center">About Us</h1>
             <p class="my-5">Talluri Technologies is a leading healthcare management company which is specializing in Revenue Cycle Management solutions (RCM). We are offering end-to-end Revenue Cycle Management (RCM) services to its clients with a commitment to quality, accountability, compliance and personal service to each of its clients. We have many years of experience to deliver the highest quality solutions in the healthcare built on expertise with constant focus on efficiency, cost effectiveness and customer satisfaction. We are liaisons between the high-end technology and experience personnel working together in an efficient and cost effective manner with a goal of optimizing revenue and maintaining the highest level of compliance. We provide the core business to our clients, by reducing their operating cost, increase revenues and improve efficiency under the expertise and leading-edge technology.</p>
-            <div class="border border-2 border-secondary rounded my-5 p-3">
+            <div class="border border-2 border rounded my-5 p-3">
                 <h3 class="text-center">Our Vision</h2>
                 <p>We will provide our clients with quality Coding, Medical Billing and Collection services that will facilitate the receiving of payments in a quick and timely manner. Submit medical claims accurately and securely; and provide current medical coding information to further enhance our client’s knowledge base. We will provide our clients the highest quality customer service. We will be the undisputed leader in Medical Billing, Collections, Coding and related information and services.</p>
             </div>
-            <div class="border border-2 border-secondary rounded my-5 p-3">
+            <div class="border border-2 border rounded my-5 p-3">
                 <h3 class="text-center">Mission Statement</h3>
                 <p>Our aim is to provide customized solutions based on our customers specific requirements which are cost effective and excellent quality along with trusted partner that ensures maximize revenue consistently.</p>
             </div>
-            <div class="border border-2 border-secondary rounded my-5 p-3">
+            <div class="border border-2 border rounded my-5 p-3">
                 <h3 class="text-center">Quality Policy</h3>
                 <p>Talluri Technologies is dedicated to quality and continuous process improvement for customers to provide the health care services and creates values through innovative methodologies, like process development, a process specific control plan, training plans for all employees, verification and validation of all processes.</p>
             </div>
@@ -55,10 +51,11 @@
     // Update the navbar to make the relevant link active. 
     var url = window.location.href.split('/')
     var loc = url[url.length-1]
+    // Ignore any "scroll-to" commands.
+    loc = loc.split("#")[0]
 
     // If statement in case the link is in a dropdown.
     let linkHolder = $('a[href$="' + loc + '"]')
-    console.log(linkHolder)
     if (linkHolder.hasClass('nav-link')) {
       $('a[href$="' + loc + '"]').addClass('active')
     }

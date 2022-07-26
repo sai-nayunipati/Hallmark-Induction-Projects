@@ -13,18 +13,14 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
   <!--jQuery minifed-->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <!--Stylesheet-->
+  <link rel="stylesheet" href="zephyr.css" type="text/css">
 </head>
 <div id="navbar"></div>
 <body style="margin-top:55px">
-  <!--Using a carousel wrapper to make sure image dimensions same as home page-->
-  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="https://picsum.photos/300/100?a" class="d-block w-100" alt="...">
-      </div>
-  </div>
+    <img src="http://talluritechnologies.com/wp-content/themes/talluritechnologies/images/inner-bg.jpg" alt="" style="height: 30vh; width:100%; object-fit: cover">
 
-  <div class="container-fluid px-0">
+    <div class="container-fluid px-0">
       <!--Opening panel-->
       <div class="div bg-light">
           <div class="container pb-4">
@@ -160,25 +156,26 @@
 </script>
 
 <script>
-  // Load the navbar.
-  $( "#navbar" ).load( "templates/navbar.html", () => {
-    // Update the navbar to make the relevant link active. 
-    var url = window.location.href.split('/')
-    var loc = url[url.length-1]
-
-    // If statement in case the link is in a dropdown.
-    let linkHolder = $('a[href$="' + loc + '"]')
-    console.log(linkHolder)
-    if (linkHolder.hasClass('nav-link')) {
-      $('a[href$="' + loc + '"]').addClass('active')
-    }
-    else {
-      $('a[href$="' + loc + '"]').parent().parent().siblings().addClass('active')
-    }
-  });
-
-  // Load the footer.
-  $( "#footer" ).load( "templates/footer.html" );
-</script>
+    // Load the navbar.
+    $( "#navbar" ).load( "templates/navbar.html", () => {
+      // Update the navbar to make the relevant link active. 
+      var url = window.location.href.split('/')
+      var loc = url[url.length-1]
+      // Ignore any "scroll-to" commands.
+      loc = loc.split("?")[0]
+  
+      // If statement in case the link is in a dropdown.
+      let linkHolder = $('a[href$="' + loc + '"]')
+      if (linkHolder.hasClass('nav-link')) {
+        $('a[href$="' + loc + '"]').addClass('active')
+      }
+      else {
+        $('a[href$="' + loc + '"]').parent().parent().siblings().addClass('active')
+      }
+    });
+  
+    // Load the footer.
+    $( "#footer" ).load( "templates/footer.html" );
+  </script>
 
 </html>

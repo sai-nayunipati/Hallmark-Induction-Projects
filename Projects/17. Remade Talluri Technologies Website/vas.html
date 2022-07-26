@@ -11,16 +11,12 @@
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
   <!--jQuery minifed-->
   <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <!--Stylesheet-->
+  <link rel="stylesheet" href="zephyr.css" type="text/css">
 </head>
 <div id="navbar"></div>
-<body style="margin-top:55px">
-  <!--Using a carousel wrapper to make sure image dimensions same as home page-->
-  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="https://picsum.photos/300/100?a" class="d-block w-100" alt="...">
-      </div>
-  </div>
+<body style="margin-top:67px">
+  <img src="http://talluritechnologies.com/wp-content/themes/talluritechnologies/images/inner-bg.jpg" alt="" style="height: 30vh; width:100%; object-fit: cover">
 
   <div class="container-fluid px-0">
       <!--Opening panel-->
@@ -36,29 +32,29 @@
                           <th scope="col">Description</th>
                       </thead>
                       <tbody>
-                          <tr id="provider-credentialing">
-                              <th scope="row">Provider Credentialing</th>
-                              <td>Credentialing is the process of obtaining, verifying, and assessing the qualifications of a practitioner to provide services for a health care organization. Credentials are documented evidence of licensure, education, training, experience, or other qualifications. We understands the credentialing process, rules and regulations of different insurance organizations as well as the complex provider credentialing requirements. We work for various types of medical practitioners, we have established strong, long-term connections and personal relationships with numerous provider enrolment representatives in many insurances. As a result, we are able to save your time and money on what could otherwise be a lengthy credentialing process.</td>
+                          <tr>
+                              <th scope="row"><span id="provider-credentialing" style="position: relative; bottom: 90px"></span>Provider Credentialing</th>
+                              <td>Credentialing is the process of obtaining, verifying, and assessing the qualifications of a practitioner to provide services for a health care organization. Credentials are documented evidence of licensure, education, training, experience, or other qualifications. We understands the credentialing process, rules and regulations of different insurance organizations as well as the complex provider credentialing requirements. We work for various types of medical practitioners, we have established strong, long-term connections and personal relationships with numerous provider enrolment representatives in many insurances. As a result, we are able to save your time and money on what could otherwise be a lengthy credentialing process.</td>  
                           </tr>
-                          <tr id="provider-enrollment">
-                              <th scope="row">Provider Enrollment</th>
+                          <tr>
+                              <th scope="row"><span id="provider-enrollment" style="position: relative; bottom: 90px"></span>Provider Enrollment</th>
                               <td>Provider Enrolment refers to the process of requesting participation in a health insurance network as a Participating Provider. The provider enrolment process involves requesting enrolment/contracting with a plan; completing the plans credentialing/enrolment application; submitting copies of licenses, insurance, and other documents; signing a contract; and any other steps that may be unique to a carrier.  Many commercial carriers utilize CAQH to obtain credentialing information from a central location, and require that providers have a complete and up to date profile in the CAQH system as part of the enrolment process. Our expertise are handle all the paperwork and follow up with the insurance companies on behalf of the provider.  The value of these services lie in the time saved and general expertise of dealing with insurance companies on a daily basis.</td>
                           </tr>
-                          <tr id="online-insurance-registration">
-                              <th scope="row">Online Insurance Registration</th>
+                          <tr>
+                              <th scope="row"><span id="online-insurance-registration" style="position: relative; bottom: 90px"></span>Online Insurance Registration</th>
                               <td>Online web registration is one of the most important feature in Medical Billing. We take care of online web registering with payer websites which helps to find the eligibility & benefits and accurate coverage information; so claims will be submitted to correct payer. After submission of the claims, we check the claim status in the web portal, so AR team takes the quick action for non-paid claims before getting the EOB. We download the EOB’s directly from website so no need to scan & send the EOB’s to us which saves lot of client’s front office team time.</td>
                           </tr>
-                          <tr id="eft-support">
-                              <th scope="row">EFT Support</th>
+                          <tr>
+                              <th scope="row"><span id="eft-support" style="position: relative; bottom: 90px"></span>EFT Support</th>
                               <td>As we know using Electronic Funds Transfer has proven to be faster and more efficient than mailing paper checks. We provide the service of EFT and ensures that we do the EFT set up for all payers. After releasing the payment from payer, automatically it will be credited in to provider bank account.</td>
                           </tr>
-                          <tr id="edi-setup">
+                          <tr>
                               <th scope="row">EDI Set Up</th>
-                              <td><strong>Electronic Data Interchange</strong><br>At present still few insurance companies are accepting only paper claims but in future they may move to electronic set up. We provide EDI set up supports for payer(s) who updated their claims receiving method from paper to electronic. Our team have the skill and expertise finds the updated list of insurance carriers who accepts the electronic claims & do the EDI set up which increase the claims processing speed and improves the revenue flow.</td>
+                              <td><span id="edi-setup" style="position: relative; bottom: 90px"></span><strong>Electronic Data Interchange</strong><br>At present still few insurance companies are accepting only paper claims but in future they may move to electronic set up. We provide EDI set up supports for payer(s) who updated their claims receiving method from paper to electronic. Our team have the skill and expertise finds the updated list of insurance carriers who accepts the electronic claims & do the EDI set up which increase the claims processing speed and improves the revenue flow.</td>
                           </tr>
-                          <tr id="era-support">
+                          <tr>
                               <th scope="row">ERA Support</th>
-                              <td><strong>Electronic Remittance Advice</strong><br>Electronic Remittance Advice is a HIPAA-compliant electronic communication that contains claims payment or denied information. It replaces the paper Explanation of Benefits (EOB).  By using ERA, we can get to know the status of our submitted claims in a fastest way</td>
+                              <td><span id="era-support" style="position: relative; bottom: 90px"></span><strong>Electronic Remittance Advice</strong><br>Electronic Remittance Advice is a HIPAA-compliant electronic communication that contains claims payment or denied information. It replaces the paper Explanation of Benefits (EOB).  By using ERA, we can get to know the status of our submitted claims in a fastest way</td>
                           </tr>
                       </tbody>
                   </table>
@@ -76,10 +72,11 @@
     // Update the navbar to make the relevant link active. 
     var url = window.location.href.split('/')
     var loc = url[url.length-1]
+    // Ignore any "scroll-to" commands.
+    loc = loc.split("#")[0]
 
     // If statement in case the link is in a dropdown.
     let linkHolder = $('a[href$="' + loc + '"]')
-    console.log(linkHolder)
     if (linkHolder.hasClass('nav-link')) {
       $('a[href$="' + loc + '"]').addClass('active')
     }
