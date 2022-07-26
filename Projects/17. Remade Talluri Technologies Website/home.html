@@ -1,270 +1,260 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
     <!--Bootstrap CSS-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <!--Bootstrap JS Bundle-->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!--Bootstrap JS Bundle-->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <!--jQuery minifed-->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 </head>
-<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Talluri Technologies</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+<div id="navbar"></div>
+<body style="margin-top:55px">
+<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 6"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="https://picsum.photos/300/100" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Data Secure</h5>
+          <p>Apart from being HIPPA compliant, redundant hardware embedded with banking-grade firewall systems is used for secure data transactions.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://picsum.photos/300/100" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Accelerated Payments and Revenue Boosts</h5>
+          <p>Our internal claims tracking tool lets us ensure all submitted claims are in adjudication. Our regular ERA monitoring and remittance posting leads to quicker secondary insurance submission and payment billing.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://picsum.photos/300/100" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Reliable. Accurate. Innovative.</h5>
+          <p>Our culture of continuous improvement results in reliable and accurate healthcare outcomes, and an understanding of all special needs related to reporting, statements, and billing services.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://picsum.photos/300/100" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Advance Claims Analysis</h5>
+          <p>Our aim is to focus on claims submission date and follow ups, enhances AR to close all claims based on carrier adjudication time line which helps in delivering high-quality, safe and affordable healthcare to all.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://picsum.photos/300/100" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Our Expertise</h5>
+          <p>Our Years of Expertise enables the optimization of resources with smart work implementation to assure the cost effective option to providers in getting out there business.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="https://picsum.photos/300/100" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Expand Your World</h5>
+          <p>Our developing service contracts and meeting expectations which help to maintain long term business relationships.</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
     </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="about.html">About Us</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/billing.html">Medical Billing</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Medical Coding</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Value Added Services</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Specialties</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Contact Us</a>
-        </li>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+</div>
+
+<div class="container-fluid px-0">
+  <!--Opening panel-->
+  <div class="div bg-light">
+    <div class="container pb-4">
+      <br>
+      <br>
+      <h1 class="text-center">Welcome to Talluri Technologies</h1>
+      <p class="my-5 lead">Bringing innovative and smart work together delivers new insight, allowing you to increase your revenue by solving complex issues in a billing process.</p>
+      <h6>Our Advantages</h6>
+      <p>Getting paid for services, using effective billing processes, maximizing revenue, managing client payments and overdue accounts and ensuring that office employees operate ina  trustworthy manner.</p>
+      <ul>
+          <li>We manage your billing and optimize your practice so that you can focus on patient care.</li>
+          <li>We maximize your business potential which effects on to minimizing the AR days which improves revenue cash flow.</li>
+          <li>Create an ideal practise by streamlining operations and reducing over heads</li>
+          <li>Increase clean claim rate which reduce the denial percentage</li>
+          <li>We always keep on trying ourselves to stay up to date with payer rules.</li>
+          <li>Improved Provider & Patient satisfaction</li>
+      </ul>
+      <button class="btn btn-primary btn-lg d-block mx-auto">Contact Us</button>
+    </div>
+  </div>
+
+  <!--Services offered-->
+  <div style="background-color:rgb(221, 229, 252)">
+    <div class="container pb-4">
+      <br>
+      <br>
+      <h3 class="text-center">Key Services</h3>
+      <ul class="list-inline text-center p-4 rounded">
+          <li class="list-inline-item bg-light rounded p-2">Medical Billing</li>
+          <li class="list-inline-item bg-light rounded p-2">Medical Coding</li>
+          <li class="list-inline-item bg-light rounded p-2">Uniform Billing</li>
+          <li class="list-inline-item bg-light rounded p-2">Therapeutic Revenue Services</li>
+          <li class="list-inline-item bg-light rounded p-2">Patient Collections</li>
+          <li class="list-inline-item bg-light rounded p-2">Provider Education and Quality Payment Program</li>
+      </ul>
+      <h3 class="text-center" style="color:rgb(58, 76, 91)">Value-Added Services</h3>
+      <ul class="list-inline text-center p-4 rounded">
+            <li class="list-inline-item bg-light rounded p-2" data-bs-toggle="tooltip" data-bs-placement="top" title="The credentialing process can be time consuming and."><a href="/vas.html#provider-credentialing">Provider Credentialing</a><small class="text-muted"> (?)</small></li>
+            <li class="list-inline-item bg-light rounded p-2" data-bs-toggle="tooltip" data-bs-placement="top" title="Provider enrolment refers to the process of requesting"><a href="/vas.html#provider-enrollment">Provider Enrollment</a><small class="text-muted"> (?)</small></li>
+            <li class="list-inline-item bg-light rounded p-2" data-bs-toggle="tooltip" data-bs-placement="top" title="Online web registration is one of the most important feature"><a href="/vas.html#online-insurance-registration">Insurance Online Registration</a><small class="text-muted"> (?)</small></li>
+            <li class="list-inline-item bg-light rounded p-2" data-bs-toggle="tooltip" data-bs-placement="top" title="Most of the payers makes the payment thru EFT which require"><a href="/vas.html#eft-support">EFT Support</a><small class="text-muted"> (?)</small></li>
+            <li class="list-inline-item bg-light rounded p-2" data-bs-toggle="tooltip" data-bs-placement="top" title="At present still few insurance companies are accepting only"><a href="/vas.html#edi-setup">EDI Set Up</a><small class="text-muted"> (?)</small></li>
+            <li class="list-inline-item bg-light rounded p-2" data-bs-toggle="tooltip" data-bs-placement="top" title="We do ERA set up for all major insurance companies which saves"><a href="/vas.html#era-support">ERA Support</a><small class="text-muted"> (?)</small></li>
       </ul>
     </div>
   </div>
-</nav>
-<body style="margin-top:55px">
 
-    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-        <div class="carousel-indicators">
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
-          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 6"></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img src="https://picsum.photos/300/100?a" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Data Secure</h5>
-              <p>Apart from being HIPPA compliant, redundant hardware embedded with banking-grade firewall systems is used for secure data transactions.</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="https://picsum.photos/300/100?b" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Accelerated Payments and Revenue Boosts</h5>
-              <p>Our internal claims tracking tool lets us ensure all submitted claims are in adjudication. Our regular ERA monitoring and remittance posting leads to quicker secondary insurance submission and payment billing.</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="https://picsum.photos/300/100?c" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Reliable. Accurate. Innovative.</h5>
-              <p>Our culture of continuous improvement results in reliable and accurate healthcare outcomes, and an understanding of all special needs related to reporting, statements, and billing services.</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="https://picsum.photos/300/100?d" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Advance Claims Analysis</h5>
-              <p>Our aim is to focus on claims submission date and follow ups, enhances AR to close all claims based on carrier adjudication time line which helps in delivering high-quality, safe and affordable healthcare to all.</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="https://picsum.photos/300/100?e" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Our Expertise</h5>
-              <p>Our Years of Expertise enables the optimization of resources with smart work implementation to assure the cost effective option to providers in getting out there business.</p>
-            </div>
-          </div>
-          <div class="carousel-item">
-            <img src="https://picsum.photos/300/100?f" class="d-block w-100" alt="...">
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Expand Your World</h5>
-              <p>Our developing service contracts and meeting expectations which help to maintain long term business relationships.</p>
-            </div>
-          </div>
-        </div>
-        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-    </div>
-
-    <div class="container-fluid px-0">
-      <!--Opening panel-->
-      <div class="div bg-light">
-        <div class="container pb-4">
-          <br>
-          <br>
-          <h1 class="text-center">Welcome to Talluri Technologies</h1>
-          <p class="my-5 lead">Bringing innovative and smart work together delivers new insight, allowing you to increase your revenue by solving complex issues in a billing process.</p>
-          <h6>Our Advantages</h6>
-          <p>Getting paid for services, using effective billing processes, maximizing revenue, managing client payments and overdue accounts and ensuring that office employees operate ina  trustworthy manner.</p>
-          <ul>
-              <li>We manage your billing and optimize your practice so that you can focus on patient care.</li>
-              <li>We maximize your business potential which effects on to minimizing the AR days which improves revenue cash flow.</li>
-              <li>Create an ideal practise by streamlining operations and reducing over heads</li>
-              <li>Increase clean claim rate which reduce the denial percentage</li>
-              <li>We always keep on trying ourselves to stay up to date with payer rules.</li>
-              <li>Improved Provider & Patient satisfaction</li>
-          </ul>
-          <button class="btn btn-primary btn-lg d-block mx-auto">Contact Us</button>
-        </div>
-      </div>
-
-      <!--Services offered-->
-      <div style="background-color:rgb(221, 229, 252)">
-        <div class="container pb-4">
-          <br>
-          <br>
-          <h3 class="text-center">Key Services</h3>
-          <ul class="list-inline text-center p-4 rounded">
-              <li class="list-inline-item bg-light rounded p-2">Medical Billing</li>
-              <li class="list-inline-item bg-light rounded p-2">Medical Coding</li>
-              <li class="list-inline-item bg-light rounded p-2">Uniform Billing</li>
-              <li class="list-inline-item bg-light rounded p-2">Therapeutic Revenue Services</li>
-              <li class="list-inline-item bg-light rounded p-2">Patient Collections</li>
-              <li class="list-inline-item bg-light rounded p-2">Provider Education and Quality Payment Program</li>
-          </ul>
-          <h3 class="text-center" style="color:rgb(58, 76, 91)">Value-Added Services</h3>
-          <ul class="list-inline text-center p-4 rounded">
-                <li class="list-inline-item bg-light rounded p-2" data-bs-toggle="tooltip" data-bs-placement="top" title="The credentialing process can be time consuming and.">Provider Credentialing<small class="text-muted"> (?)</small></li>
-                <li class="list-inline-item bg-light rounded p-2" data-bs-toggle="tooltip" data-bs-placement="top" title="Provider enrolment refers to the process of requesting">Provider Enrollment<small class="text-muted"> (?)</small></li>
-                <li class="list-inline-item bg-light rounded p-2" data-bs-toggle="tooltip" data-bs-placement="top" title="Online web registration is one of the most important feature">Insurance Online Registration<small class="text-muted"> (?)</small></li>
-                <li class="list-inline-item bg-light rounded p-2" data-bs-toggle="tooltip" data-bs-placement="top" title="Most of the payers makes the payment thru EFT which require">EFT Support<small class="text-muted"> (?)</small></li>
-                <li class="list-inline-item bg-light rounded p-2" data-bs-toggle="tooltip" data-bs-placement="top" title="At present still few insurance companies are accepting only">EDI Set Up<small class="text-muted"> (?)</small></li>
-                <li class="list-inline-item bg-light rounded p-2" data-bs-toggle="tooltip" data-bs-placement="top" title="We do ERA set up for all major insurance companies which saves">ERA Support<small class="text-muted"> (?)</small></li>
-          </ul>
-        </div>
-      </div>
-
-      <!--Areas of expertise-->
-      <div class="div bg-light">
-        <div class="container pb-4">
-          <br>
-          <br>
-          <h3 class="text-center">Our Areas of Expertise</h3>
-        
-          <div class="row gx-4 my-5">
-              <div class="col">
-                  <div class="card h-100">
-                      <img class="card-img-top" src="https://picsum.photos/150/125?a" alt="Card image cap">
-                      <div class="card-body">
-                          <p class="card-text text-center">Workers' Compensation</h>
-                      </div>
-                  </div>
-              </div>
-              <div class="col">
-                  <div class="card h-100">
-                      <img class="card-img-top" src="https://picsum.photos/150/125?b" alt="Card image cap">
-                      <div class="card-body">
-                          <p class="card-text text-center">Rural Health Clinic Services</h>
-                      </div>
-                  </div>
-              </div>
-              <div class="col">
-                  <div class="card h-100">
-                      <img class="card-img-top" src="https://picsum.photos/150/125?c" alt="Card image cap">
-                      <div class="card-body">
-                          <p class="card-text text-center">Uniform Billing (UB04)</h>
-                      </div>
-                  </div>
-              </div>
-              <div class="col">
-                  <div class="card h-100">
-                      <img class="card-img-top" src="https://picsum.photos/150/125?d" alt="Card image cap">
-                      <div class="card-body">
-                          <p class="card-text text-center">Therapeutic Coding and Billing</h>
-                      </div>
-                  </div>
-              </div>
-              <div class="col">
-                  <div class="card h-100">
-                      <img class="card-img-top" src="https://picsum.photos/150/125?a" alt="Card image cap">
-                      <div class="card-body">
-                          <p class="card-text text-center">Interventional Cardiology</h>
-                      </div>
+  <!--Areas of expertise-->
+  <div class="div bg-light">
+    <div class="container pb-4">
+      <br>
+      <br>
+      <h3 class="text-center">Our Areas of Expertise</h3>
+    
+      <div class="row gx-4 my-5">
+          <div class="col">
+              <div class="card h-100">
+                  <img class="card-img-top" src="https://picsum.photos/150/125" alt="Card image cap">
+                  <div class="card-body">
+                      <p class="card-text text-center">Workers' Compensation</h>
                   </div>
               </div>
           </div>
-        </div>
-      </div>
-
-      <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-0 border-top">
-          <p class="col-md-4 mb-0 text-muted mx-4">© 2022 Talluri Technologies. All Rights Reserved. </p>
-      
-          <ul class="nav col-md-6 justify-content-end mx-4">
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Contact Us</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted" data-bs-toggle="modal" data-bs-target="#exampleModal">HIPPA Compliance</a></li>
-            <li class="nav-item"><a href="#" class="nav-link px-2 text-muted" data-bs-toggle="modal" data-bs-target="#exampleModal2">Our Revenue Cycle Process</a></li>
-          </ul>
-      </footer>
-
-      <!--HIPPA modal-->
-      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-lg">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">HIPPA Compiance</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-              HIPAA (Health Insurance Portability and Accountability Act of 1996) is United States legislation that provides data privacy and security provisions for safeguarding medical information.
-              <br>
-              <br>
-              The security policy of Talluri Technologies ensures that all information security management requirements are noticed and are performing. We manages sensitive and vital corporate, customer information securely in addition to ensuring its confidentiality, integrity & availability. We have strong commitment in ensuring that the people, process and technology are secure.
-              <br>
-              <br>
-              Talluri operations and systems are HIPAA compliant. Utilizing our highly trained and skilled staff, ensure that our clients maintain the highest level of compliance.
-            </div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            </div>
+          <div class="col">
+              <div class="card h-100">
+                  <img class="card-img-top" src="https://picsum.photos/150/125" alt="Card image cap">
+                  <div class="card-body">
+                      <p class="card-text text-center">Rural Health Clinic Services</h>
+                  </div>
+              </div>
           </div>
-        </div>
-      </div>
-
-      <!--Revenue stream modal-->
-      <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-      <div class="modal-dialog modal-lg">
-        <div class="modal-content">
-          <div class="modal-header">
-            <h5 class="modal-title" id="exampleModalLabel">Our Revenue Cycle Process</h5>
-            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          <div class="col">
+              <div class="card h-100">
+                  <img class="card-img-top" src="https://picsum.photos/150/125" alt="Card image cap">
+                  <div class="card-body">
+                      <p class="card-text text-center">Uniform Billing (UB04)</h>
+                  </div>
+              </div>
           </div>
-          <div class="modal-body">
-            <img class="img-fluid" src="http://talluritechnologies.com/wp-content/uploads/2017/03/revenue-cycle-3.jpg" alt="">
+          <div class="col">
+              <div class="card h-100">
+                  <img class="card-img-top" src="https://picsum.photos/150/125" alt="Card image cap">
+                  <div class="card-body">
+                      <p class="card-text text-center">Therapeutic Coding and Billing</h>
+                  </div>
+              </div>
           </div>
-          <div class="modal-footer">
-            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <div class="col">
+              <div class="card h-100">
+                  <img class="card-img-top" src="https://picsum.photos/150/125" alt="Card image cap">
+                  <div class="card-body">
+                      <p class="card-text text-center">Interventional Cardiology</h>
+                  </div>
+              </div>
           </div>
-        </div>
       </div>
     </div>
+  </div>
+
+  <!--TODO: Get the current year for copyright-->
+  <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-0 border-top">
+      <p class="col-md-4 mb-0 text-muted mx-4">© 2022 Talluri Technologies. All Rights Reserved. </p>
+  
+      <ul class="nav col-md-6 justify-content-end mx-4">
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Contact Us</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted" data-bs-toggle="modal" data-bs-target="#exampleModal">HIPPA Compliance</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-muted" data-bs-toggle="modal" data-bs-target="#exampleModal2">Our Revenue Cycle Process</a></li>
+      </ul>
+  </footer>
 </body>
 <!--Must initialize Bootstrap tooltips to get them to work-->
+
+<!--HIPPA modal-->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">HIPPA Compliance</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        HIPAA (Health Insurance Portability and Accountability Act of 1996) is United States legislation that provides data privacy and security provisions for safeguarding medical information.
+        <br>
+        <br>
+        The security policy of Talluri Technologies ensures that all information security management requirements are noticed and are performing. We manages sensitive and vital corporate, customer information securely in addition to ensuring its confidentiality, integrity & availability. We have strong commitment in ensuring that the people, process and technology are secure.
+        <br>
+        <br>
+        Talluri operations and systems are HIPAA compliant. Utilizing our highly trained and skilled staff, ensure that our clients maintain the highest level of compliance.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Revenue stream modal-->
+<div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Our Revenue Cycle Process</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img class="img-fluid" src="http://talluritechnologies.com/wp-content/uploads/2017/03/revenue-cycle-3.jpg" alt="">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
 <script>
   var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))
   var tooltipList = tooltipTriggerList.map(function (tooltipTriggerEl) {
     return new bootstrap.Tooltip(tooltipTriggerEl)
   })
+</script>
+
+<script>
+  // Load the navbar.
+  $( "#navbar" ).load( "templates/navbar.html", () => {
+    // Update the navbar to make the relevant link active. 
+    var url = window.location.href.split('/')
+    var loc = url[url.length-1]
+
+    // If statement in case the link is in a dropdown.
+    let linkHolder = $('a[href$="' + loc + '"]')
+    console.log(linkHolder)
+    if (linkHolder.hasClass('nav-link')) {
+      $('a[href$="' + loc + '"]').addClass('active')
+    }
+    else {
+      $('a[href$="' + loc + '"]').parent().parent().siblings().addClass('active')
+    }
+  });
 </script>
 </html>

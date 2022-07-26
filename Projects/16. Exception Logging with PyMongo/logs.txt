@@ -1,0 +1,7 @@
+2022-07-24 09:59:17,831 : Invalid args: teakdfjshadsgk(tetststsa)
+2022-07-24 09:59:17,832 : name 'tetststsa' is not defined
+Traceback (most recent call last):
+  File "C:\Users\visa4\OneDrive\Desktop\Hallmark-Induction-Projects\Projects\16. Exception Logging with PyMongo\exception_mongo.py", line 18, in <module>
+    eval("mycollection." + method + "(" + args + ")")  # pylint: disable=eval-used
+  File "<string>", line 1, in <module>
+NameError: name 'tetststsa' is not defined

@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us</title>
+    <title>Insurance Eligibility Verification</title>
     <!--Bootstrap CSS-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!--Bootstrap JS Bundle-->
@@ -29,20 +29,10 @@
             <div class="container pb-4">
                 <br>
                 <br>
-                <h1 class="text-center">About Us</h1>
-                <p class="my-5">Talluri Technologies is a leading healthcare management company which is specializing in Revenue Cycle Management solutions (RCM). We are offering end-to-end Revenue Cycle Management (RCM) services to its clients with a commitment to quality, accountability, compliance and personal service to each of its clients. We have many years of experience to deliver the highest quality solutions in the healthcare built on expertise with constant focus on efficiency, cost effectiveness and customer satisfaction. We are liaisons between the high-end technology and experience personnel working together in an efficient and cost effective manner with a goal of optimizing revenue and maintaining the highest level of compliance. We provide the core business to our clients, by reducing their operating cost, increase revenues and improve efficiency under the expertise and leading-edge technology.</p>
-                <div class="border border-2 border-secondary rounded my-5 p-3">
-                    <h3 class="text-center">Our Vision</h2>
-                    <p>We will provide our clients with quality Coding, Medical Billing and Collection services that will facilitate the receiving of payments in a quick and timely manner. Submit medical claims accurately and securely; and provide current medical coding information to further enhance our client’s knowledge base. We will provide our clients the highest quality customer service. We will be the undisputed leader in Medical Billing, Collections, Coding and related information and services.</p>
-                </div>
-                <div class="border border-2 border-secondary rounded my-5 p-3">
-                    <h3 class="text-center">Mission Statement</h3>
-                    <p>Our aim is to provide customized solutions based on our customers specific requirements which are cost effective and excellent quality along with trusted partner that ensures maximize revenue consistently.</p>
-                </div>
-                <div class="border border-2 border-secondary rounded my-5 p-3">
-                    <h3 class="text-center">Quality Policy</h3>
-                    <p>Talluri Technologies is dedicated to quality and continuous process improvement for customers to provide the health care services and creates values through innovative methodologies, like process development, a process specific control plan, training plans for all employees, verification and validation of all processes.</p>
-                </div>
+                <h1 class="text-center">Insurance Eligibility Verification</h1>
+                <p class="my-5"><strong>Insurance Eligibility & Benefits Verification</strong><br>Insurance eligibility and benefits verification, let’s get the access to the patient detailed information to avoid the claims; which are denied or delayed due to inadequate & incorrect coverage information. Accurate eligibility information can be verified the improper or lack of insurance eligibility which directly impacts on the cash flow or revenue cycle process. Our expertise provides the up-to-date eligibility and benefits data increases clean claims rates and accelerates reimbursement along with a better patient experience or satisfaction.</p>
+                <strong>Why we need to follow the Insurance Eligibility Verification?</strong>
+                <p>Insurance companies regularly make policy changes and updated the health plans. So it is important to verify whether the patient is covered under the new plan to get maximum reimbursement or not. After confirming the insurance coverage details which accepts the claim on first submission, whereas non verification leads to several issues like, rework, increased errors, denials and decreased patient satisfaction. Our expertise verify the insurance eligibility & coverage to get paid better to reduce denials on coverage issues and improve customer relations.</p>
             </div>
         </div>
 
@@ -57,6 +47,25 @@
         </footer>
     </div>
 </body>
+
+<script>
+  // Load the navbar.
+  $( "#navbar" ).load( "templates/navbar.html", () => {
+    // Update the navbar to make the relevant link active. 
+    var url = window.location.href.split('/')
+    var loc = url[url.length-1]
+
+    // If statement in case the link is in a dropdown.
+    let linkHolder = $('a[href$="' + loc + '"]')
+    console.log(linkHolder)
+    if (linkHolder.hasClass('nav-link')) {
+      $('a[href$="' + loc + '"]').addClass('active')
+    }
+    else {
+      $('a[href$="' + loc + '"]').parent().parent().siblings().addClass('active')
+    }
+  });
+</script>
 
 <!--HIPPA modal-->
 <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
@@ -99,24 +108,5 @@
     </div>
   </div>
 </div>
-
-<script>
-  // Load the navbar.
-  $( "#navbar" ).load( "templates/navbar.html", () => {
-    // Update the navbar to make the relevant link active. 
-    var url = window.location.href.split('/')
-    var loc = url[url.length-1]
-
-    // If statement in case the link is in a dropdown.
-    let linkHolder = $('a[href$="' + loc + '"]')
-    console.log(linkHolder)
-    if (linkHolder.hasClass('nav-link')) {
-      $('a[href$="' + loc + '"]').addClass('active')
-    }
-    else {
-      $('a[href$="' + loc + '"]').parent().parent().siblings().addClass('active')
-    }
-  });
-</script>
 
 </html>

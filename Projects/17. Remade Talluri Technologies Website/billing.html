@@ -9,40 +9,10 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <!--Bootstrap JS Bundle-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <!--jQuery minifed-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 </head>
-<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-light">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Talluri Technologies</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link" href="/home.html">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/about.html">About Us</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Medical Billing</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Medical Coding</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Value Added Services</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Specialties</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Contact Us</a>
-        </li>
-      </ul>
-    </div>
-  </div>
-</nav>
+<div id="navbar"></div>
 <body style="margin-top:55px">
 
     <!--Using a carousel wrapper to make sure image dimensions same as home page-->
@@ -54,7 +24,6 @@
     </div>
 
     <div class="container-fluid px-0">
-        <!--Opening panel-->
         <div class="div bg-light">
             <div class="container pb-4">
                 <br>
@@ -62,14 +31,126 @@
                 <h1 class="text-center">Medical Billing</h1>
                 <p class="my-5">Talluri follows strategies by providing end to end billing solutions including patient registration, verifying patient eligibility, prior authorization, charge entry, payment posting, accounts receivables & patient follow ups.</p>
                 
-                <div class="bg-primary mx-auto rounded-top" style="width: 50px; height:300px"></div>
-                <div class="bg-secondary mx-auto" style="width: 50px; height:300px"></div>
-                <div class="bg-primary mx-auto" style="width: 50px; height:300px"></div>
-                <div class="bg-secondary mx-auto" style="width: 50px; height:300px"></div>
-                <div class="bg-primary mx-auto" style="width: 50px; height:300px"></div>
-                <div class="bg-secondary mx-auto" style="width: 50px; height:300px"></div>
-                <div class="bg-primary mx-auto" style="width: 50px; height:300px"></div>
-                <div class="bg-secondary mx-auto rounded-bottom" style="width: 50px; height:300px"></div>
+                <img src="http://talluritechnologies.com/wp-content/uploads/2017/02/medical-billing-process-2.jpg" alt="" class="mx-auto d-block">
+
+                <div class="accordion my-5" id="accordionPanelsStayOpenExample">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                        1. Patient Demographic Entry
+                      </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                      <div class="accordion-body">
+                        Patient Demographic contains all the basic demographic information about an individual or patient. We have well trained professionals to capture and verifies the entire patient demographic and insurance details; before updating the information in PMS & submits the clean claims to the insurance company’s.
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+                        2. Charge Entry
+                      </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
+                      <div class="accordion-body">
+                        Charge entry is one of the crucial areas in medical billing; where you can create your claims. To get process your insurance claims, need to provide the patient details like face sheet, physician details, insurance coverage and billing information, which is taken care by Talluri.
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingThree">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
+                        3. Electronic Claims Transmission
+                      </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
+                      <div class="accordion-body">
+                        Talluri provides an electronic claims transmission to all Federal and Non Federal payers through the clearing house by submitting the primary & secondary insurance claims.
+                        <br><br>
+                        <strong>The benefits of the electronic claims transmission:</strong>
+                        <ul>
+                          <li>Faster claims revenue cycle</li>
+                          <li>Submitting claim instantly to the payer</li>
+                          <li>Saves time and paper printing</li>
+                          <li>Increase practice efficiency</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingFour">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseFour">
+                        4. Payment Posting
+                      </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFour">
+                      <div class="accordion-body">
+                        Payment posting in medical billing is one of the key processes that get the utmost attention from our operations management. We post the payments & denials in to the patient account which receive in all forms, i.e. EOB’s, EFT’s received from carriers, checks, credit card and cash payments received from patients. Posting team forwards the denial claims information to AR team; so AR team works on denials the day we receive the EOB which minimizes the AR days
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingFive">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false" aria-controls="panelsStayOpen-collapseFive">
+                        5. Secondary Claims Printing
+                      </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFive">
+                      <div class="accordion-body">
+                        Though we are processing secondary claims electronically, it is require to print paper claims also; as there are some smaller insurance carriers are not able to accept electronic claims so, we print & mail out Secondary paper claims to reimburse the payment which left by primary insurance. We involve into printing the CMS & UB-04 paper claims.
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingSix">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseSix" aria-expanded="false" aria-controls="panelsStayOpen-collapseSix">
+                        6. Denial Management
+                      </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseSix" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingSix">
+                      <div class="accordion-body">
+                        Talluri works to improve your revenue management and ensuring you get paid for each and every claim. We identify and analyse the root cause for denials and implement strategic and proactive solution which affects the target potential problem areas to collect dues from payers. We get the required additional documentation from client’s office and resubmit the rejected & denied claims within 24 hours from the initial denial date which fasters the claims revenue cycle
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingSeven">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseSeven" aria-expanded="false" aria-controls="panelsStayOpen-collapseSeven">
+                        7. Accounts Receivables
+                      </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseSeven" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingSeven">
+                      <div class="accordion-body">
+                        Our AR team is proficient in AR follow up process, who work aggressively to know the claim 
+                        status and uses professional tactics to increase AR collection. We take care of the Accounts
+                        Receivables (AR) process personally to ensure that each account worked with multiple
+                        methodologies to get paid correctly in a timely manner. Our dedicated AR team strongly pursue
+                        all unpaid claims and fix the issues until all claims get paid.
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingEight">
+                      <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseEight" aria-expanded="false" aria-controls="panelsStayOpen-collapseEight">
+                        8. Patient Billing & Collections
+                      </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseEight" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingEight">
+                      <div class="accordion-body">
+                        No matter how patients prefer to pay, our goal is to make it easy for them to pay and easy for us to track and post the funds. Talluri provides the flexible payment solution which helps you to collect more efficiently and securely by sending the accurate bills to patient and strong follow up to make sure to get paid the balance if any left after primary and secondary insurance payment. We provide the reminder to the patients after generating the patient bills on the insurance payment date to notify that the patient responsibility to this swift billing process which is the importance of the financial portion of their visit.
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
             </div>
         </div>
 
@@ -84,4 +165,66 @@
         </footer>
     </div>
 </body>
+
+<!--HIPPA modal-->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">HIPPA Compliance</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        HIPAA (Health Insurance Portability and Accountability Act of 1996) is United States legislation that provides data privacy and security provisions for safeguarding medical information.
+        <br>
+        <br>
+        The security policy of Talluri Technologies ensures that all information security management requirements are noticed and are performing. We manages sensitive and vital corporate, customer information securely in addition to ensuring its confidentiality, integrity & availability. We have strong commitment in ensuring that the people, process and technology are secure.
+        <br>
+        <br>
+        Talluri operations and systems are HIPAA compliant. Utilizing our highly trained and skilled staff, ensure that our clients maintain the highest level of compliance.
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!--Revenue stream modal-->
+<div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Our Revenue Cycle Process</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <img class="img-fluid" src="http://talluritechnologies.com/wp-content/uploads/2017/03/revenue-cycle-3.jpg" alt="">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  // Load the navbar.
+  $( "#navbar" ).load( "templates/navbar.html", () => {
+    // Update the navbar to make the relevant link active. 
+    var url = window.location.href.split('/')
+    var loc = url[url.length-1]
+
+    // If statement in case the link is in a dropdown.
+    let linkHolder = $('a[href$="' + loc + '"]')
+    console.log(linkHolder.parent().parent().parent())
+    if (linkHolder.hasClass('nav-link')) {
+      $('a[href$="' + loc + '"]').addClass('active')
+    }
+    else {
+      $('a[href$="' + loc + '"]').parent().parent().siblings().addClass('active')
+    }
+  });
+</script>
+
 </html>
