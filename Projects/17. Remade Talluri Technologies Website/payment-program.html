@@ -1,46 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Quality Payment Program</title>
-    <!--Bootstrap CSS-->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <!--Bootstrap CSS-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <!--Bootstrap JS Bundle-->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
   <!--jQuery minifed-->
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <!--Stylesheet-->
   <link rel="stylesheet" href="zephyr.css" type="text/css">
 </head>
 <div id="navbar"></div>
+
 <body style="margin-top:67px">
-  <img src="http://talluritechnologies.com/wp-content/themes/talluritechnologies/images/inner-bg.jpg" alt="" style="height: 30vh; width:100%; object-fit: cover">
+  <img src="http://talluritechnologies.com/wp-content/themes/talluritechnologies/images/inner-bg.jpg" alt=""
+    style="height: 30vh; width:100%; object-fit: cover">
 
   <div class="container-fluid px-0">
-      <!--Opening panel-->
-      <div class="div bg-light">
-          <div class="container pb-4">
-              <br>
-              <br>
-              <h1 class="text-center">Quality Payment Program</h1>
-              <p class="mt-5">By using the Quality Payment Program which is helping you to focus on quality care and making patients healthier which matters most for Talluri. The Medicare Access and CHIP Reauthorization Act of 2015 (MACRA) ended the Sustainable Growth Rate formula, which threatened clinicians participating in Medicare with potential payment cliffs for 13 years. If you participate in Medicare Part B, you are part of the dedicated team of clinicians who serve more than 55 million of the country’s most vulnerable Americans, and the Quality Payment Program will provide new tools and resources to help you give your patients the best possible care. You can choose how you want to participate based on your practice size, specialty, location, or patient population.</p>
-              <p>We assist and educate providers on how they can be successfully participate in Quality payment program to be qualify for incentives and avoiding adjustments.</p>
-              <p>Based on speciality and technology used in maintaining health record, we assist providers in choosing and reporting the quality measures to CMS.</p>
-          </div>
+    <!--Opening panel-->
+    <div class="div bg-light">
+      <div class="container py-5">
+        <h1 class="text-center">Quality Payment Program</h1>
+        <p class="mt-5">By using the Quality Payment Program which is helping you to focus on quality care and making
+          patients healthier which matters most for Talluri. The Medicare Access and CHIP Reauthorization Act of 2015
+          (MACRA) ended the Sustainable Growth Rate formula, which threatened clinicians participating in Medicare with
+          potential payment cliffs for 13 years. If you participate in Medicare Part B, you are part of the dedicated
+          team of clinicians who serve more than 55 million of the country’s most vulnerable Americans, and the Quality
+          Payment Program will provide new tools and resources to help you give your patients the best possible care.
+          You can choose how you want to participate based on your practice size, specialty, location, or patient
+          population.</p>
+        <p>We assist and educate providers on how they can be successfully participate in Quality payment program to be
+          qualify for incentives and avoiding adjustments.</p>
+        <p>Based on speciality and technology used in maintaining health record, we assist providers in choosing and
+          reporting the quality measures to CMS.</p>
       </div>
+    </div>
 
-      <div id="footer"></div>
+    <div id="footer"></div>
   </div>
 </body>
 
 <script>
   // Load the navbar.
-  $( "#navbar" ).load( "templates/navbar.html", () => {
+  $("#navbar").load("templates/navbar.html", () => {
     // Update the navbar to make the relevant link active. 
     var url = window.location.href.split('/')
-    var loc = url[url.length-1]
+    var loc = url[url.length - 1]
     // Ignore any "scroll-to" commands.
     loc = loc.split("#")[0]
 
@@ -55,7 +69,7 @@
   });
 
   // Load the footer.
-  $( "#footer" ).load( "templates/footer.html" );
+  $("#footer").load("templates/footer.html");
 </script>
 
 </html>

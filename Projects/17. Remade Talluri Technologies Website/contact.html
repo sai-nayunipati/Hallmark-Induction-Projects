@@ -1,85 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact Us</title>
-  <!--Bootstrap CSS-->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-  <!--Bootstrap JS Bundle-->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-  <!--Bootstrap Icons -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
-  <!--jQuery minifed-->
-  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-  <!--Stylesheet-->
-  <link rel="stylesheet" href="zephyr.css" type="text/css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <!--Bootstrap CSS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!--Bootstrap JS Bundle-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <!--Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <!--jQuery minifed-->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <!--Stylesheet-->
+    <link rel="stylesheet" href="zephyr.css" type="text/css">
 </head>
 <div id="navbar"></div>
+
 <body style="margin-top:55px">
-    <img src="http://talluritechnologies.com/wp-content/themes/talluritechnologies/images/inner-bg.jpg" alt="" style="height: 30vh; width:100%; object-fit: cover">
+    <img src="http://talluritechnologies.com/wp-content/themes/talluritechnologies/images/inner-bg.jpg" alt=""
+        style="height: 30vh; width:100%; object-fit: cover">
 
     <div class="container-fluid px-0">
-      <!--Opening panel-->
-      <div class="div bg-light">
-          <div class="container pb-4">
-              <br>
-              <br>
-              <h1 class="text-center">Contact Us</h1>
-              <div class="row my-5">
-                  <div class="col-md-8">
-                      <form id="javascript_form">
-                          <div class="mb-3">
-                              <label for="inputName" class="form-label">Name</label>
-                              <input class="form-control" name="name" id="inputName">
-                          </div>
-                          <div class="mb-3">
-                            <label for="exampleInputEmail1" class="form-label">Email address</label>
-                            <input type="email" name="email address" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                            <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
-                          </div>
-                          <div class="mb-3">
-                            <label for="inputSubject" class="form-label">Subject</label>
-                            <input class="form-control" name="subject" id="inputSubject">
-                          </div>
-                          <div class="mb-3">
-                              <label for="remarks">Remarks</label>
-                              <textarea class="form-control" name="text" id="remarks" rows="5"></textarea>
-                          </div>
-                          <a class="btn btn-primary mb-3" id="js_send">Submit</a>
+        <!--Opening panel-->
+        <div class="div bg-light">
+            <div class="container py-5">
+                <h1 class="text-center">Contact Us</h1>
+                <div class="row my-5">
+                    <div class="col-md-8">
+                        <form id="javascript_form">
+                            <div class="mb-3">
+                                <label for="inputName" class="form-label">Name</label>
+                                <input class="form-control" name="name" id="inputName">
+                            </div>
+                            <div class="mb-3">
+                                <label for="exampleInputEmail1" class="form-label">Email address</label>
+                                <input type="email" name="email address" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp">
+                                <div id="emailHelp" class="form-text">We'll never share your email with anyone else.
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="inputSubject" class="form-label">Subject</label>
+                                <input class="form-control" name="subject" id="inputSubject">
+                            </div>
+                            <div class="mb-3">
+                                <label for="remarks">Remarks</label>
+                                <textarea class="form-control" name="text" id="remarks" rows="5"></textarea>
+                            </div>
+                            <a class="btn btn-primary mb-3" id="js_send">Submit</a>
 
-                          <div id="alert-container"></div>
-                      </form>
-                  </div>
-                  <div class="col-md-4">
-                      <h6>India Office</h6>
-                      <p class="mb-0">CSR Commercial Complex, # 2-56/33/40/A,</p>
-                      <p class="mb-0">5th Floor, Madhapur, Near Meridian School</p>
-                      <p class="mb-0">Hyderabad - 500 081 India</p>
-                      <p class="mb-0"><i class="bi bi-telephone"></i><a href="tel:914043405050" style="text-decoration: none;"> +91-40-43405050 Ext-222</a></p>
-                      <p><i class="bi bi-envelope"></i><a href="mailto: info@talluritechnologies.com" style="text-decoration: none;"> info@talluritechnologies.com</a></p>
+                            <div id="alert-container"></div>
+                        </form>
+                    </div>
+                    <div class="col-md-4">
+                        <h6>India Office</h6>
+                        <p class="mb-0">CSR Commercial Complex, # 2-56/33/40/A,</p>
+                        <p class="mb-0">5th Floor, Madhapur, Near Meridian School</p>
+                        <p class="mb-0">Hyderabad - 500 081 India</p>
+                        <p class="mb-0"><i class="bi bi-telephone"></i><a href="tel:914043405050"
+                                style="text-decoration: none;"> +91-40-43405050 Ext-222</a></p>
+                        <p><i class="bi bi-envelope"></i><a href="mailto: info@talluritechnologies.com"
+                                style="text-decoration: none;"> info@talluritechnologies.com</a></p>
 
-                      <h6 class="mt-5">U.S. Office</h6>
-                      <p class="mb-0">22080 Highway 20 West</p>
-                      <p class="mb-0">Vacherie, LA 70090</p>
-                      <p class="mb-0">Fax: 225-265-3062</p>
-                      <p class="mb-0"><i class="bi bi-telephone"></i><a href="tel:2252653061" style="text-decoration: none;"> 225-265-3061</a></p>
-                      <p class="mb-0"><i class="bi bi-envelope"></i></i><a href="mailto: info@talluritechnologies.com" style="text-decoration: none;"> info@talluritechnologies.com</a></p>
-                  </div>
-              </div>
-          </div>
-      </div>
+                        <h6 class="mt-5">U.S. Office</h6>
+                        <p class="mb-0">22080 Highway 20 West</p>
+                        <p class="mb-0">Vacherie, LA 70090</p>
+                        <p class="mb-0">Fax: 225-265-3062</p>
+                        <p class="mb-0"><i class="bi bi-telephone"></i><a href="tel:2252653061"
+                                style="text-decoration: none;"> 225-265-3061</a></p>
+                        <p class="mb-0"><i class="bi bi-envelope"></i></i><a href="mailto: info@talluritechnologies.com"
+                                style="text-decoration: none;"> info@talluritechnologies.com</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-      <div id="footer"></div>
-  </div>
+        <div id="footer"></div>
+    </div>
 </body>
 
-<script>    
+<script>
     let url = window.location.href
     let finalChar = url.substr(url.length - 1)
     if (finalChar == "0") {
-      document.querySelector("#alert-container").innerHTML = `
+        document.querySelector("#alert-container").innerHTML = `
         <div class="alert alert-success alert-dismissible" role="alert">
             Success! Expect a response in 3-5 business days.
             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
@@ -89,93 +100,93 @@
 </script>
 
 <script>
-  //update this with your js_form selector
-  var form_id_js = "javascript_form";
+    //update this with your js_form selector
+    var form_id_js = "javascript_form";
 
-  var data_js = {
-      "access_token": "8fuxhz1cbwe044zwe1en6y85"
-  };
+    var data_js = {
+        "access_token": "8fuxhz1cbwe044zwe1en6y85"
+    };
 
-  function js_onSuccess() {
-      // remove this to avoid redirect
-      window.location = window.location.pathname + "?message=Email+Successfully+Sent%21&isError=0";
-  }
+    function js_onSuccess() {
+        // remove this to avoid redirect
+        window.location = window.location.pathname + "?message=Email+Successfully+Sent%21&isError=0";
+    }
 
-  function js_onError(error) {
-      // remove this to avoid redirect
-      window.location = window.location.pathname + "?message=Email+could+not+be+sent.&isError=1";
-  }
+    function js_onError(error) {
+        // remove this to avoid redirect
+        window.location = window.location.pathname + "?message=Email+could+not+be+sent.&isError=1";
+    }
 
-  var sendButton = document.getElementById("js_send");
+    var sendButton = document.getElementById("js_send");
 
-  function js_send() {
-      sendButton.value='Sending…';
-      sendButton.disabled=true;
-      var request = new XMLHttpRequest();
-      request.onreadystatechange = function() {
-          if (request.readyState == 4 && request.status == 200) {
-              js_onSuccess();
-          } else
-          if(request.readyState == 4) {
-              js_onError(request.response);
-          }
-      };
+    function js_send() {
+        sendButton.value = 'Sending…';
+        sendButton.disabled = true;
+        var request = new XMLHttpRequest();
+        request.onreadystatechange = function () {
+            if (request.readyState == 4 && request.status == 200) {
+                js_onSuccess();
+            } else
+                if (request.readyState == 4) {
+                    js_onError(request.response);
+                }
+        };
 
-      var subject = document.querySelector("#" + form_id_js + " [name='subject']").value;
-      var message = document.querySelector("#" + form_id_js + " [name='text']").value;
-      message += "\n\nEmail: " + document.querySelector("#" + form_id_js + " [name='email address']").value;
-      message += "\nName: " + document.querySelector("#" + form_id_js + " [name='name']").value;
+        var subject = document.querySelector("#" + form_id_js + " [name='subject']").value;
+        var message = document.querySelector("#" + form_id_js + " [name='text']").value;
+        message += "\n\nEmail: " + document.querySelector("#" + form_id_js + " [name='email address']").value;
+        message += "\nName: " + document.querySelector("#" + form_id_js + " [name='name']").value;
 
-      data_js['subject'] = subject;
-      data_js['text'] = message;
-      var params = toParams(data_js);
+        data_js['subject'] = subject;
+        data_js['text'] = message;
+        var params = toParams(data_js);
 
-      request.open("POST", "https://postmail.invotes.com/send", true);
-      request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
+        request.open("POST", "https://postmail.invotes.com/send", true);
+        request.setRequestHeader("Content-type", "application/x-www-form-urlencoded");
 
-      request.send(params);
+        request.send(params);
 
-      return false;
-  }
+        return false;
+    }
 
-  sendButton.onclick = js_send;
+    sendButton.onclick = js_send;
 
-  function toParams(data_js) {
-      var form_data = [];
-      for ( var key in data_js ) {
-          form_data.push(encodeURIComponent(key) + "=" + encodeURIComponent(data_js[key]));
-      }
+    function toParams(data_js) {
+        var form_data = [];
+        for (var key in data_js) {
+            form_data.push(encodeURIComponent(key) + "=" + encodeURIComponent(data_js[key]));
+        }
 
-      return form_data.join("&");
-  }
+        return form_data.join("&");
+    }
 
-  var js_form = document.getElementById(form_id_js);
-  js_form.addEventListener("submit", function (e) {
-      e.preventDefault();
-  });
+    var js_form = document.getElementById(form_id_js);
+    js_form.addEventListener("submit", function (e) {
+        e.preventDefault();
+    });
 </script>
 
 <script>
     // Load the navbar.
-    $( "#navbar" ).load( "templates/navbar.html", () => {
-      // Update the navbar to make the relevant link active. 
-      var url = window.location.href.split('/')
-      var loc = url[url.length-1]
-      // Ignore any "scroll-to" commands.
-      loc = loc.split("?")[0]
-  
-      // If statement in case the link is in a dropdown.
-      let linkHolder = $('a[href$="' + loc + '"]')
-      if (linkHolder.hasClass('nav-link')) {
-        $('a[href$="' + loc + '"]').addClass('active')
-      }
-      else {
-        $('a[href$="' + loc + '"]').parent().parent().siblings().addClass('active')
-      }
+    $("#navbar").load("templates/navbar.html", () => {
+        // Update the navbar to make the relevant link active. 
+        var url = window.location.href.split('/')
+        var loc = url[url.length - 1]
+        // Ignore any "scroll-to" commands.
+        loc = loc.split("?")[0]
+
+        // If statement in case the link is in a dropdown.
+        let linkHolder = $('a[href$="' + loc + '"]')
+        if (linkHolder.hasClass('nav-link')) {
+            $('a[href$="' + loc + '"]').addClass('active')
+        }
+        else {
+            $('a[href$="' + loc + '"]').parent().parent().siblings().addClass('active')
+        }
     });
-  
+
     // Load the footer.
-    $( "#footer" ).load( "templates/footer.html" );
-  </script>
+    $("#footer").load("templates/footer.html");
+</script>
 
 </html>
